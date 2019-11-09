@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    * Theme:     Snip (https://github.com/mesuutt/snip)
+    -->
+    {% block head %}
+        <title>{{ config.title }}</title>
+        <link rel='icon' href='{Favicon}' />
+        <link rel='shortcut icon' href='{Favicon}' />
+        <link rel='alternate' type='application/rss+xml' href='{RSS}' />
+        <meta name='description' content='{{ config.description }}' />
+        <meta name='color:Link' content='#6699cc' />
+        <link rel="stylesheet" href="{{ get_url(path="theme.css") }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock head %}
+</head>
+<body>
+{% block content %} {% endblock content %}
+<br class='clear' />
+</body>
+</html>

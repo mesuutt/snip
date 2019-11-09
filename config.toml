@@ -1,0 +1,16 @@
+base_url = "https://example.com"
+title = "Today I learned"
+description = "Genellikle Linux ve Programlama ile alakalı kendim icin aldigim notlar"
+
+compile_sass = false
+highlight_code = true
+highlight_theme = "gruvbox-light"
+build_search_index = true
+
+taxonomies = [
+    {name = "tags", paginate_by = 5, rss = true}
+]
+
+[extra]
+# Put all your custom variables here
+date_format = "%d/%m/%Y"

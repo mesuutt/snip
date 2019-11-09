@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% block header %}
+        <div id='header'>
+            <div id='headerContent'>
+                <h1><a href='/'>{{ config.title }}</a></h1>
+                <p>{{ config.description }}</p>
+            </div>
+        </div>
+    {% endblock header %}
+    <div id='wrapper'>
+        <div id='posts'>
+            {% for page in paginator.pages %}
+                <div class='postInfo'>
+                    <a href='{Permalink}'>
+                        {{ page.date | date(format=config.extra.date_format) }}
+                        <br />
+                        <span>
+                            {% set post_time = page.date | date(format="%H:%M") %}
+                            {% if post_time != "00:00" %}
+                                {{ post_time }}
+                            {% endif %}
+                        </span>
+                    </a>
+                </div>
+                <div class='postWrapper'>
+                    <div class='postContainer'>
+                        <div class='post'>
+                            <h3>{{ page.title }}</h3>
+                            <div class="post-content">
+                                {{ page.content | safe }}
+                            </div>
+                        </div>
+                        <div class='insideInfo'>
+                            <div class='postTags'>
+                                {# Posted 1 years ago #}
+                                <br />
+                                {% for tag in page.taxonomies.tags %}
+                                    <a href='{{ get_taxonomy_url(kind="tags", name=tag) | safe }}'>#{{ tag }}</a>
+                                {% endfor %}
+                            </div>
+                            {#
+
+                            <div class='postNotes'>
+                                <a href="{{ page.permalink }}">
+                                    10 like
+                                </a>
+                            </div>
+                            #}
+                            <br class='clear' />
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
