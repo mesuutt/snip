@@ -4,11 +4,12 @@ description = "Genellikle Linux ve Programlama ile alakalı kendim icin aldigim 
 
 compile_sass = false
 highlight_code = true
-highlight_theme = "gruvbox-light"
+highlight_theme = "solarized-light"
 build_search_index = true
+generate_rss = true
 
 taxonomies = [
-    {name = "tags", paginate_by = 5, rss = true}
+    {name = "tags", paginate_by = 1, rss = true}
 ]
 
 [extra]

@@ -11,7 +11,7 @@
 }
 body {
     background-color:#fff;
-    font:0.8em Georgia;
+    font:1em Georgia;
     line-height:140%;
     color:#424242;
     margin:0 0 15px 0;
@@ -21,7 +21,7 @@ a img {
 }
 a {
     text-decoration:none;
-    color:{color:Link};
+    color:#6699cc;
 }
 a:hover {
     color:#424242;
@@ -41,7 +41,7 @@ p {
     padding:0;
 }
 #wrapper {
-    width:632px;
+    width:732px;
     margin:0 auto;
 }
 #header {
@@ -80,7 +80,7 @@ p {
     color:#cecece;
 }
 .postWrapper {
-    width:522px;
+    width:622px;
     float:left;
     margin:0 0 15px 0;
     border:5px solid #f8f8f8;
@@ -198,4 +198,17 @@ ol.notes li.note blockquote a {
     text-align:right;
     padding:0 16px 0 0;
     font-weight:normal;
+}
+
+
+.post-content > blockquote {
+    margin: 0;
+}
+
+.post-content >  blockquote > p {
+    font-size:1.3em;
+    margin:0 0 10px 0;
+    border-left:4px solid #d7d7d7;
+    padding:0 0 0 6px;
+    font-style: italic;
 }
