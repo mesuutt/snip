@@ -1,7 +1,9 @@
 {% extends "index.html" %}
 {% block post_list %}
-    {% for term in terms %}
-        # <a href="{{ term.permalink }}">{{ term.name }} ({{ term.pages | length }})</a>
-        <br>
-    {% endfor %}
+    <div style="padding-left: 20px">
+        {% for term in terms %}
+            # <a href="{{ term.permalink }}">{{ term.name }} ({{ term.pages | length }})</a>
+            <br>
+        {% endfor %}
+    </div>
 {% endblock post_list %}

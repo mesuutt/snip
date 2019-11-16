@@ -13,9 +13,10 @@ body {
     background-color:#fff;
     font:1em Georgia;
     line-height:140%;
-    color:#424242;
+    color:#222;
     margin:0 0 15px 0;
 }
+
 a img {
     border:none;
 }
@@ -41,7 +42,7 @@ p {
     padding:0;
 }
 #wrapper {
-    width:732px;
+    width:632px;
     margin:0 auto;
 }
 #header {
@@ -53,6 +54,7 @@ p {
 #headerContent {
     width:632px;
     margin:0 auto;
+    text-align: center;
 }
 #headerContent h1 a {
     color:#424242;
@@ -81,7 +83,6 @@ p {
 }
 .postWrapper {
     width:622px;
-    float:left;
     margin:0 0 15px 0;
     border:5px solid #f8f8f8;
 }
@@ -110,7 +111,7 @@ p {
 }
 .insideInfo .postNotes {
     width:150px;
-    float:left;
+    float:right;
     text-align:right;
 }
 p.quote {
@@ -164,7 +165,7 @@ p.quote {
 }
 .footer {
     color:#cecece;
-    padding:0 0 0 116px;
+    padding:0 0 0 25px;
     font-size:0.8em;
     font-weight:bold;
 }
@@ -211,4 +212,27 @@ ol.notes li.note blockquote a {
     border-left:4px solid #d7d7d7;
     padding:0 0 0 6px;
     font-style: italic;
+}
+
+pre {
+    overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+    html { font-size:1.4em; }
+    #header {
+        width: 635px;
+    }
+
+    #headerContent {
+        width: 620px;
+    }
+
+    #wrapper {
+        width: 630px;
+    }
+
+    .postWrapper{
+        width: 620px;
+    }
 }
