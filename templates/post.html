@@ -1,0 +1,34 @@
+<div class='postWrapper'>
+    <div class='postContainer'>
+        <div class='post'>
+            <h3>{{ page.title }}</h3>
+            <div class="post-content">
+                {{ page.content | safe }}
+            </div>
+        </div>
+        <div class='insideInfo'>
+            <div class='postTags'>
+                {# Posted 1 years ago #}
+                {{ page.date | date(format=config.extra.date_format) }}
+                {% set post_time = page.date | date(format="%H:%M") %}
+                {% if post_time != "00:00" %}
+                    {{ post_time }}
+                {% endif %}
+                <br />
+                {% if page.taxonomies.tags %}
+                    {% for tag in page.taxonomies.tags %}
+                        <a href='{{ get_taxonomy_url(kind="tags", name=tag) | safe }}'>#{{ tag }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class='postNotes'>
+                1212 Likes -
+                <a href="{{ page.permalink }}">
+                    Link
+                </a>
+            </div>
+            <br class='clear' />
+        </div>
+    </div>
+</div>

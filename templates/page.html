@@ -11,12 +11,8 @@
     {% endblock header %}
     <div id='wrapper'>
         <div id='posts'>
-            {% block post_list %}
-                {% for page in paginator.pages %}
-                    {% include "post.html" %}
-                {% endfor %}
-                {% include "footer.html" %}
-            {% endblock post_list %}
+            {% include "post.html" %}
+            {% include "footer.html" %}
         </div>
     </div>
 {% endblock content %}

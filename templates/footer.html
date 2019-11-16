@@ -1,0 +1,13 @@
+<div class='footer'>
+    <div class='credits'>
+        <a href='/tags'>Tags</a> |
+        <a href='/rss.xml'>RSS</a> |
+        Theme: <a href='https://github.com/mesuutt/snip'>Snip</a>
+    </div>
+    {% if paginator.next %}
+        <a href='{{ paginator.next }}'>&#171; Older</a>
+    {% endif %}
+    {% if paginator.previous %}
+        <a href='{{ paginator.previous }}'>Newer &#187;</a>
+    {% endif %}
+</div>

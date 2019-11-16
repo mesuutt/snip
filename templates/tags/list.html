@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+{% block post_list %}
+    {% for term in terms %}
+        # <a href="{{ term.permalink }}">{{ term.name }} ({{ term.pages | length }})</a>
+        <br>
+    {% endfor %}
+{% endblock post_list %}

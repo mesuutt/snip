@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+{% block post_list %}
+    {% for page in term.pages %}
+        {% include "post.html" %}
+    {% endfor %}
+    {% include "footer.html" %}
+{% endblock post_list %}
