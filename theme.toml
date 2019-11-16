@@ -1,10 +1,10 @@
-name = "Snip"
+name = "snip"
 description = "A simple blog theme focused on writing, inspired by tumblr optimus"
 license = "MIT"
 homepage = "https://github.com/mesuutt/snip"
 min_version = "0.0.1"
-demo = "https://snipdemo.mesuutt.com"
+demo = "https://til.mesuutt.com"
 
 [author]
 name = "Mesut Tasci"
-homepage = "https://github.com/mesuutt/snip"
+homepage = "https://github.com/mesuutt"

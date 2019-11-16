@@ -1,17 +1,15 @@
 base_url = "https://example.com"
-title = "Today I learned"
-description = "Genellikle Linux ve Programlama ile alakalı kendim icin aldigim notlar"
+title = "Snip"
 
 compile_sass = false
 highlight_code = true
 highlight_theme = "solarized-light"
-build_search_index = true
+build_search_index = false
 generate_rss = true
 
 taxonomies = [
-    {name = "tags", paginate_by = 1, rss = true}
+    {name = "tags", rss = true}
 ]
 
 [extra]
-# Put all your custom variables here
 date_format = "%d/%m/%Y"
