@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 {% block post_list %}
     {% for page in term.pages %}
-        {% include "post.html" %}
+        {% include "snip/templates/post.html" %}
     {% endfor %}
-    {% include "footer.html" %}
+    {% include "snip/templates/footer.html" %}
 {% endblock post_list %}

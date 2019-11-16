@@ -13,9 +13,9 @@
         <div id='posts'>
             {% block post_list %}
                 {% for page in paginator.pages %}
-                    {% include "post.html" %}
+                    {% include "snip/templates/post.html" %}
                 {% endfor %}
-                {% include "footer.html" %}
+                {% include "snip/templates/footer.html" %}
             {% endblock post_list %}
         </div>
     </div>
