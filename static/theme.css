@@ -236,3 +236,12 @@ pre {
         width: 620px;
     }
 }
+
+.post code {
+
+    font-size: 94%;
+    color: #bf616a;
+    background: #efeded;
+    padding: .25em .5em;
+    border-radius: 3px;
+}
